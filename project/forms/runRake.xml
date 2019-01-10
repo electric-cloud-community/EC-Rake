@@ -1,0 +1,37 @@
+<editor>
+    <help>/commander/pages/@PLUGIN_NAME@/@PLUGIN_KEY@_help?s=Administration&amp;ss=Plugins#runRake</help>
+    <formElement>
+        <type>entry</type>
+        <label>Working Directory</label>
+        <property>directory</property>
+        <documentation>The directory on wich the rake command will be executed.</documentation>
+        <required>0</required>
+    </formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Rakefile</label>
+        <property>rakefile</property>
+        <required>1</required>
+        <documentation>Absolute path to the rakefile you want to use.</documentation>
+    </formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Task to execute</label>
+        <property>task</property>
+        <documentation>Provide the name of the task to be executed.</documentation>
+    </formElement>
+    <formElement>
+         <type>checkbox</type>
+        <label>Trace</label>
+        <property>trace</property>
+        <checkedValue>1</checkedValue>
+        <uncheckedValue>0</uncheckedValue>
+        <documentation>Enables full backtrace of tasks while running.</documentation>
+    </formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Additional Options</label>
+        <property>additionalOptions</property>
+        <documentation>Additional options for the rake tool.</documentation>
+    </formElement>
+  </editor>

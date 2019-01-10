@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 25 March 2009), see www.w3.org" />
+  <meta content="text/html; charset=us-ascii" http-equiv=
+  "content-type" />
+
+  <title>ElectricFlow Plugin for Rake</title>
+  <link rel="stylesheet" href=
+  "../../plugins/@PLUGIN_KEY@/pluginhelp.css" type="text/css"
+  media="screen" />
+</head>
+
+<body>
+  <div class="help">
+    <h1>Rake</h1>
+
+    <p>Plugin Version @PLUGIN_VERSION@</p>
+    <hr style=
+    "margin-left: -10px; margin-top: 10px; height: 1px; width: 100%; color: #5981BD;"
+    noshade="noshade" />
+
+	<p>July 1, 2015</p>
+	
+    <p>Rake is a software task management tool. It allows you to
+    specify tasks and describe dependencies as well as to group
+    tasks in a namespace.<br />
+    It is similar to SCons and make, but has a number of
+    differences.<br />
+    The tool is written in the Ruby programming language, and the
+    Rakefiles (equivalent of Makefiles in make) use Ruby
+    syntax.</p>
+
+    <h2>Rake Links</h2>
+
+    <p>More information can be found at <a href=
+    "http://rake.rubyforge.org/">this website</a>.</p>
+
+    <h2>ElectricFlow Integration to Rake</h2>
+
+    <p>The plugin calls the ruby gem's "RAKE" from the command line
+    and passes the user-provided parameters.<br />
+    If you use rake to build your projects you can automate the
+    building process and easily detect errors with our postp
+    feature.</p>
+
+    <h2>Integrated Version</h2>
+
+    <p>This plugin was developed and tested against version
+    0.8.7</p>
+
+    <h1>Plugin Procedures</h1>
+
+    <p>IMPORTANT: For all parameter descriptions below, required
+    parameters are shown in <span class='required'>bold
+    italics</span>.</p>
+
+    <div id="runRake"><a name='runRake' id="runRake"></a>
+
+    <h3>runRake</h3>
+
+    <p>This procedure allows you to build or perform task using the
+    ruby gem called "rake"</p>
+
+    <table class="grid">
+      <thead>
+        <tr>
+          <th>Parameter</th>
+
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Working Directory</td>
+
+          <td>The directory on which the rake command will be
+          executed</td>
+        </tr>
+
+        <tr>
+          <td class='required'>Rakefile</td>
+
+          <td>Absolute path to the rakefile you want to use. (This
+          is the command-line '-f' option) (Required)</td>
+        </tr>
+
+        <tr>
+          <td>Task to execute</td>
+
+          <td>Provide the name of the task to be executed.</td>
+        </tr>
+
+        <tr>
+          <td>Trace</td>
+
+          <td>Enables full backtrace of tasks while running. (This
+          is the command-line '--trace' option)</td>
+        </tr>
+
+        <tr>
+          <td>Additional Options</td>
+
+          <td>Additional options for the rake tool.</td>
+        </tr>
+      </tbody>
+    </table><img src="../../plugins/@PLUGIN_KEY@/images/Rake-2.png"
+    alt="Form" /></div>
+
+    <h1>Examples and Use Cases</h1>
+
+    <p>In this example we are going to use the Rake plugin to
+    execute a list of task established in a rakefile.</p>
+
+    <ol>
+      <li>In this case we are going to create a rake file with the
+      steps to make coffee:<br />
+      <img src="../../plugins/@PLUGIN_KEY@/images/Rake-1.png" alt=
+      "Rake File" /></li>
+
+      <li>Once we have the rakefile ready, we need to create a step
+      and fill the parameter form:<br />
+      <img src="../../plugins/@PLUGIN_KEY@/images/Rake-2.png" alt=
+      "Form" /></li>
+
+      <li>Run the procedure and you will see the results:<br />
+      <img src="../../plugins/@PLUGIN_KEY@/images/Rake-3.png" alt=
+      "Results" /></li>
+    </ol>
+
+    <h1>Release Notes</h1>
+	
+	<h2>@PLUGIN_KEY@-2.0.3</h2>
+
+    <ul>
+        <li>Renamed ElectricCommander to ElectricFlow.</li>
+    </ul>
+
+    <h2>@PLUGIN_KEY@-2.0.2</h2>
+
+    <ul>
+        <li>Procedure name(s) were changed in the step picker section</li>
+    </ul>
+    
+    <h2>@PLUGIN_KEY@-2.0.1</h2>
+
+    <ul>
+      <li>Change Help page style.</li>
+    </ul>
+
+    <h2>@PLUGIN_KEY@-2.0.0</h2>
+
+    <ul>
+      <li>XML parameter panel.</li>
+
+      <li>Help page was updated.</li>
+
+      <li>The "Trace" parameter was added.</li>
+
+      <li>Code improvements.</li>
+    </ul>
+  </div>
+</body>
+</html>
